@@ -1,0 +1,9 @@
+
+[strpad := [adder string amount char =>
+  [padding := [* char [- amount [len string]]]]
+  [adder string padding]
+]]
+
+[print [strpad [a b => [+ a b]] "Hello" 10 "-"]]
+[print [strpad [a b => [+ b a]] "Hello" 10 "-"]]
+
